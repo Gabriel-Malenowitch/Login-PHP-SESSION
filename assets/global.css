@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.1s linear;
+}
+
+:root{
+    --glass-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.137);
+    --border-shadow-0: 10px;
+    --border-shadow-1: solid 1px transparent;
+    --border-shadow-2: rgba(255, 255, 255, 0.685) rgba(255, 255, 255, 0.342) rgba(78, 78, 78, 0.158) rgba(255, 255, 255, 0.774);
+    /* --bg-shadow: rgba(255, 255, 255, 0.171); */
+    --bg-shadow: rgba(250, 220, 220, 0.308);
+    --bg-shadow-hover: rgba(250, 231, 220, 0.349);
+    --title-color: #DDEDDD;
+}
+
+body{
+    /* background-image: linear-gradient(to right, 
+    #57B6FF, 
+    #e762d8,
+    #FFEF51); */
+    background: rgb(197, 107, 197);
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    width: 500px;
+    /* height: 400px; */
+    height: 30vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.glass{
+    border-radius: var(--border-shadow-0);
+    border: var(--border-shadow-1);
+    border-color: var(--border-shadow-2);
+    background: var(--bg-shadow);
+    box-shadow: var(--glass-shadow);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}

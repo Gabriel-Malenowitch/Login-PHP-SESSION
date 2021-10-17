@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    height: 50%;
+    margin: 60px;
+    padding: 20px;
+    position: relative;
+}
+#container p a{
+    color: black;
+    font-weight: 600;
+}
